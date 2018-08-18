@@ -1,28 +1,70 @@
-.App {
-  text-align: center;
+.App{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.container h3{
+ display: inline;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.line{
+  margin-top: -15px;
 }
 
-.App-header {
-  background-color: #222;
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+  color:rgba(0, 0, 0, .4);
+  border-bottom: 2px solid rgba(0, 0, 0, .2);
+  padding-bottom: 10px;
+}
+td{
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+th:nth-child(1){
+  padding-right: 800px;
+}
+th:nth-child(2){
+  padding-right: 50px;
+}
+th:nth-child(3){
+  padding-right: 100px;
+}
+td{
+  vertical-align: top;
+}
+.item{
+  display: flex;
+}
+.image{
+  width: 150px;
   height: 150px;
-  padding: 20px;
-  color: white;
+}
+.item-description p{
+  font-size: 13px;
+  font-weight: bold;
+}
+.item-description p:nth-child(2), .item-description p:nth-child(3), .cart-message{
+ color: rgba(0, 0, 0, .5);
+}
+.color{
+  margin-bottom: 30px;
+}
+.size{
+  font-size: 14px;
+  font-weight: bold;
+  color:rgba(0, 0, 0, .5);
+}
+.quantity input{
+  width: 40px;
+  padding-left: 13px;
+}
+.price{
+  color:rgba(0, 0, 0, .7);
+}
+.price span{
+ font-size: 10px;
+ vertical-align: top;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
