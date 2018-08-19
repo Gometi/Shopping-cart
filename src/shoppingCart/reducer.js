@@ -1,12 +1,4 @@
-import { List, Map } from 'immutable';
-
-// const init = List([
-//   Map({
-//     id: 1,
-//     isDone: false,
-//     text: "good"
-//   })
-// ]);
+import { List, Map, remove } from 'immutable';
 
 const init = List([
   Map({
@@ -26,6 +18,24 @@ const init = List([
         price: 23.99,
         quantity: 1,
         image: require("../images/girls-long-sleeve.jpg")
+  }),
+  Map({
+    id:3,
+        name: "Collar Plaid Shirt",
+        style: "R13GT1304",
+        color: "red",
+        price: 30.99,
+        quantity: 1,
+        image: require("../images/collar-plaid-shirt.jpg")
+  }),
+  Map({
+    id:4,
+        name: "Cotton Linen",
+        style: "R13GT1304",
+        color: "blue",
+        price: 27.99,
+        quantity: 1,
+        image: require("../images/cotton-linen.jpg")
   })
 ]);
 
@@ -41,8 +51,8 @@ const init = List([
         }
       })
       case 'REMOVE':
-      return cart.filter((item) =>{
-           return item.get('id') !== action.payload.id
+      return cart.filter(item => {
+        return item.get('id') !== action.payload;
       })
     default:
       return cart;
