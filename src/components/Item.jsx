@@ -3,7 +3,7 @@ import "../App.css";
 class Item extends Component {
     constructor(props) {
         super(props)
-        this.state = {...this.props.item};
+        this.state = this.props.item;
     }
 
    

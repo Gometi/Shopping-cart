@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from "./components/Header";
+import Header from "./shoppingCart/components/Header";
 import items from "./items";
-import ShoppingCart from "./components/ShoppingCart";
+import AddItem from "./components/AddItem";
+import EditItem from "./components/EditItem";
+import { ShoppingCart } from './shoppingCart/containers';
+import { TodoList } from './shoppingCart/containers';
 
 class App extends Component {
+  constructor(){
+    super();
+    
+  }
+  
   render() {
     return (
       <div className="App">
-       <Header/>
-       <ShoppingCart items={items}/>
+      <Header/>
+      <ShoppingCart/>
       </div>
     );
   }
