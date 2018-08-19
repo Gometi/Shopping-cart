@@ -68,3 +68,7 @@ td{
  vertical-align: top;
 }
 
+.item-modal{
+  display: none;
+}
+

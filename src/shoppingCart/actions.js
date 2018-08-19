@@ -13,3 +13,11 @@ export function remove(id){
   };
 }
 
+export function updateModal(text) {
+  return {
+    type: 'UPDATE_MODAL',
+    payload: { ...text }
+  };
+}
+
+

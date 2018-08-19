@@ -3,7 +3,7 @@ import "../../App.css";
 const Item = (props)=> {
     const { item, deleteItem } = props;
     const handleDelete = ()=>{
-       deleteItem(2);
+       deleteItem(item.id);
     }
     return (
          <tr>
