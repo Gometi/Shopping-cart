@@ -5,9 +5,7 @@ import { Button, Modal, DropdownButton, MenuItem, FormControl } from 'react-boot
 class itemModal extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      ...this.props.modal
-    }
+    
     this.handleClose = this.handleClose.bind(this);
     this.setSize = this.setSize.bind(this);
     this.handleQuantity = this.handleQuantity.bind(this)
@@ -44,7 +42,7 @@ class itemModal extends Component {
 
   handleItemUpdate() {
     this.props.itemUpdate(this.props.modal);
-    
+
     this.props.modalUpdate({ show: false });
   }
 
@@ -108,41 +106,6 @@ class itemModal extends Component {
       </div>
 
 
-      // <div className={this.props.modal.class} id="exampleModal" tabIndex="-1" role="dialog">
-      //   <div className="modal-dialog modal-dialog-centered" role="document">
-      //     <div className="modal-content">
-      //       <div className="modal-header">
-
-      //         <button type="button" onClick={this.handleUpdateModal} className="close" aria-label="Close">
-      //           <span aria-hidden="true">&times;</span>
-      //         </button>
-      //         <div className="modal-body">
-      //         <div className="container-fluid">
-      //             <div className="row">
-      //               <div className="col-md-4 modal-item-details">
-      //               <p>{this.props.modal.name}</p>
-      //               <p className="modal-price"><span>$</span>{this.props.modal.price}</p>
-      //               <p>{this.props.modal.style}</p>
-      //               <p>Color:{this.props.modal.color}</p>
-      //               <p>{this.props.modal.quantity}</p>
-      //               </div>
-      //               <div className="col-md-4">
-      //                 <img className="image" src={this.props.modal.image} alt="item" />
-      //               </div>
-      //             </div>
-
-      //         </div>
-
-      //         </div>
-
-      //         <div class="modal-footer">
-      //           <button className="btn btn-primary" onClick={this.updateItem}  >Edit</button>
-      //         </div>
-
-      //       </div>
-      //     </div>
-      //   </div>
-      // </div>
     )
   }
 }
