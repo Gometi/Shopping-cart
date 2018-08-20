@@ -6,7 +6,7 @@ const init = List([
         name: "Casual Business Strip",
         style: "MS13KT1906",
         color: "blue",
-        size: "S",
+        size: "Small",
         price: 11.99,
         quantity: 1,
         image: require("../images/casual-business-strip.jpg")
@@ -16,7 +16,7 @@ const init = List([
         name: "Girls Long Sleeve",
         style: "R13GT1304",
         color: "pink",
-        size: "S",
+        size: "Small",
         price: 23.99,
         quantity: 1,
         image: require("../images/girls-long-sleeve.jpg")
@@ -26,7 +26,7 @@ const init = List([
         name: "Collar Plaid Shirt",
         style: "R13GT1304",
         color: "red",
-        size: "S",
+        size: "Small",
         price: 30.99,
         quantity: 1,
         image: require("../images/collar-plaid-shirt.jpg")
@@ -36,7 +36,7 @@ const init = List([
         name: "Cotton Linen",
         style: "R13GT1304",
         color: "blue",
-        size: "S",
+        size: "Small",
         price: 27.99,
         quantity: 1,
         image: require("../images/cotton-linen.jpg")

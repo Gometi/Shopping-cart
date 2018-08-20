@@ -5,8 +5,8 @@ const Item = (props)=> {
     const handleDelete = ()=>{
        deleteItem(item.id);
     }
-     const handleUpdateModal = ()=>{
-         let modalItem = {...item, class: "show"}
+     const showModal = ()=>{
+         let modalItem = {...item, show: true}
         modalUpdate(modalItem)
      }
     
@@ -19,7 +19,7 @@ const Item = (props)=> {
                                         <p>{item.name}</p>
                                         <p>Style#: {item.style}</p>
                                         <p className="color">Color: {item.color}</p>
-                                        <h5><span onClick={handleUpdateModal}>EDIT |</span><span onClick={handleDelete}> X REMOVE |</span><span> SAVE FOR LATER</span></h5>
+                                        <h5><span onClick={showModal}>EDIT |</span><span onClick={handleDelete}> X REMOVE |</span><span> SAVE FOR LATER</span></h5>
                                     </div>
                                 </div>
                             </td>

@@ -5,17 +5,17 @@ import ItemModal from "./ItemModal";
 
 const Cart = (props) => {
     const { cart, modal, update, remove, updateModal } = props;
-    const add = () => {
-        update({
-            id: 1,
-            key: "name",
-            value: "mmakers dresss"
-        });
-        update({
-            id: 1,
-            key: "color",
-            value: "dark red"
-        });
+    const itemUpdate = (item) => {      
+
+        let keys = Object.keys(item);
+        let values = Object.values(item);
+        keys.map((key, index) => {
+            update({
+                id: item.id,
+                key: key,
+                value: values[index]
+            });
+        })
     }
 
     const deleteItem = (id) => {
@@ -49,11 +49,7 @@ const Cart = (props) => {
                     ))}
                 </tbody>
             </table>
-
-
-            <button onClick={add}>Item</button>
-            <button onClick={modalUpdate}>modalUpdate</button>
-            <ItemModal modal={modal.toJS()} modalUpdate={modalUpdate} />
+            <ItemModal modal={modal.toJS()} modalUpdate={modalUpdate} itemUpdate={itemUpdate} />
         </div>
     );
 }

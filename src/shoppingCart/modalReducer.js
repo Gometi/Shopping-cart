@@ -4,11 +4,11 @@ const init = Map({
     name: "Casual Business Strip",
     style: "MS13KT1906",
     color: "blue",
-    size: "small",
+    size: "Small",
     price: 11.99,
     quantity: 1,
     image: require("../images/casual-business-strip.jpg"),
-    class: "hide"
+    show: false
 })
 
 

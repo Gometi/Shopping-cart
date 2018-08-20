@@ -75,6 +75,7 @@ td{
   font-size: 10px;
 }
 
+
 .modal-item-details p:nth-child(3){
   color:rgba(0, 0, 0, .3);
   font-weight: bold;
@@ -83,6 +84,15 @@ td{
 .container-fluid .row{
   position: relative;
   left: 90px;
+}
+.modal-quantity{
+  display: flex;
+}
+.modal-color{
+  width: 50px;
+}
+.color-container{
+  display: flex;
 }
 
 .show{
