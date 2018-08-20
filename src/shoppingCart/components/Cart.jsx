@@ -3,7 +3,6 @@ import Item from './Item'
 import '../../App.css';
 import ItemModal from "./ItemModal";
 import Checkout from "./Checkout";
-import { Table } from "react-bootstrap";
 
 const Cart = (props) => {
     const { cart, modal, update, remove, updateModal } = props;
@@ -38,7 +37,7 @@ const Cart = (props) => {
 
     return (
         <div className=''>
-            <table responsive className="itemList">
+            <table className="itemList">
                 <tbody>
                     <tr>
                         <th>{cart.toJS().length} ITEMS</th>

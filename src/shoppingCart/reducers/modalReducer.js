@@ -7,7 +7,7 @@ const init = Map({
     size: "Small",
     price: 11.99,
     quantity: 1,
-    image: require("../images/casual-business-strip.jpg"),
+    image: require("../../images/casual-business-strip.jpg"),
     show: false
 })
 

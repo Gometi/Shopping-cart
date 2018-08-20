@@ -2,15 +2,15 @@
   margin-right: 100px;
   margin-left: 100px;
 }
-/* .container h3{
- display: inline;
-} */
+.click:hover{
+  cursor: pointer;
+}
 .itemList{
 border-collapse: collapse;
   width: 100%;
 }
 .line{
-  margin-top: -15px;
+  margin-top: -12px;
 }
 
 

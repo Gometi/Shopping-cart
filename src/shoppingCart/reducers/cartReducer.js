@@ -9,7 +9,7 @@ const init = List([
         size: "Small",
         price: 11.99,
         quantity: 1,
-        image: require("../images/casual-business-strip.jpg")
+        image: require("../../images/casual-business-strip.jpg")
     }),
     Map({
         id: 2,
@@ -19,7 +19,7 @@ const init = List([
         size: "Small",
         price: 23.99,
         quantity: 1,
-        image: require("../images/girls-long-sleeve.jpg")
+        image: require("../../images/girls-long-sleeve.jpg")
     }),
     Map({
         id: 3,
@@ -29,7 +29,7 @@ const init = List([
         size: "Small",
         price: 30.99,
         quantity: 1,
-        image: require("../images/collar-plaid-shirt.jpg")
+        image: require("../../images/collar-plaid-shirt.jpg")
     }),
     Map({
         id: 4,
@@ -39,7 +39,7 @@ const init = List([
         size: "Small",
         price: 27.99,
         quantity: 1,
-        image: require("../images/cotton-linen.jpg")
+        image: require("../../images/cotton-linen.jpg")
     })
 ]);
 
