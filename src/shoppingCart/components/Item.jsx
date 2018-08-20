@@ -1,10 +1,15 @@
 import React from 'react';
 import "../../App.css";
 const Item = (props)=> {
-    const { item, deleteItem } = props;
+    const { item, deleteItem, modalUpdate } = props;
     const handleDelete = ()=>{
        deleteItem(item.id);
     }
+     const handleUpdateModal = ()=>{
+         let modalItem = {...item, class: "show"}
+        modalUpdate(modalItem)
+     }
+    
     return (
          <tr>
                             <td>
@@ -14,12 +19,12 @@ const Item = (props)=> {
                                         <p>{item.name}</p>
                                         <p>Style#: {item.style}</p>
                                         <p className="color">Color: {item.color}</p>
-                                        <h5><span>EDIT |</span><span onClick={handleDelete}> X REMOVE |</span><span> SAVE FOR LATER</span></h5>
+                                        <h5><span onClick={handleUpdateModal}>EDIT |</span><span onClick={handleDelete}> X REMOVE |</span><span> SAVE FOR LATER</span></h5>
                                     </div>
                                 </div>
                             </td>
                             <td>
-                                <p className="size">S</p>
+                                <p className="size">{item.size}</p>
                             </td>
                             <td className="quantity">
                                 <p><input type='text' value={item.quantity} readOnly /></p>

@@ -22,16 +22,20 @@ const Cart = (props) => {
         remove(id)
     }
 
-    const modalUpdate = () => {
-        updateModal({
-            id: 1,
-            key: "name",
-            value: "mmakers dresss"
-        });
+    const modalUpdate = (item) => {
+        let keys = Object.keys(item);
+        let values = Object.values(item);
+        keys.map((key, index)=> {
+            updateModal({
+                key: key,
+                value: values[index]
+            });
+        })
+        
     }
 
     return (
-        <div className='todo'>
+        <div className=''>
             <table>
                 <tbody>
                     <tr>
@@ -41,7 +45,7 @@ const Cart = (props) => {
                         <th>PRICE</th>
                     </tr>
                     {cart.map(item => (
-                        <Item key={item.get('id')} item={item.toJS()} deleteItem={deleteItem} />
+                        <Item key={item.get('id')} item={item.toJS()} deleteItem={deleteItem} modalUpdate={modalUpdate} />
                     ))}
                 </tbody>
             </table>
@@ -49,7 +53,7 @@ const Cart = (props) => {
 
             <button onClick={add}>Item</button>
             <button onClick={modalUpdate}>modalUpdate</button>
-            <ItemModal modal={modal.toJS()} />
+            <ItemModal modal={modal.toJS()} modalUpdate={modalUpdate} />
         </div>
     );
 }

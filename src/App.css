@@ -2,9 +2,9 @@
   margin-right: 100px;
   margin-left: 100px;
 }
-.container h3{
+/* .container h3{
  display: inline;
-}
+} */
 
 .line{
   margin-top: -15px;
@@ -67,8 +67,35 @@ td{
  font-size: 10px;
  vertical-align: top;
 }
+.modal-price{
+  font-size: 18px;
+  font-weight: bold;
+}
+.modal-price span{
+  font-size: 10px;
+}
 
-.item-modal{
+.modal-item-details p:nth-child(3){
+  color:rgba(0, 0, 0, .3);
+  font-weight: bold;
+
+}
+.container-fluid .row{
+  position: relative;
+  left: 90px;
+}
+
+.show{
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  background: rgba(10, 0, 0, .8);
+  height: 100%;
+  width: 100%;
+}
+.hide{
   display: none;
 }
+
+
 
