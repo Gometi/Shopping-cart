@@ -1,5 +1,6 @@
 let items = [
     {
+        id: 1,
         name: "Casual Business Strip",
         style: "MS13KT1906",
         color: "blue",
@@ -8,6 +9,7 @@ let items = [
         image: require("./images/casual-business-strip.jpg")
     },
     {
+        id:2,
         name: "Girls Long Sleeve",
         style: "R13GT1304",
         color: "pink",
